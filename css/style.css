@@ -64,6 +64,10 @@ a:hover, a:focus {
 	font-size: 40px;
 	font-weight: 300;
 	margin: 0;
+	opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
 #greeting h2 {
@@ -171,4 +175,23 @@ a:hover, a:focus {
 	#nav {
 		display: none;
 	}
+}
+
+@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+ 
+.fade-in {
+	opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+ 
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 }
