@@ -191,7 +191,7 @@ a:hover, a:focus {
 	-moz-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
  
-	-webkit-animation-duration: 0.5s;
-	-moz-animation-duration: 0.5s;
-	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.7s;
+	-moz-animation-duration: 0.7s;
+	animation-duration: 0.7s;
 }
