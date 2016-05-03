@@ -112,12 +112,6 @@ a:hover, a:focus {
 }
 
 .mobile h1 {
-	font-size: 20px;
-	font-weight: 500;
-	margin: 0 0 10% 0;
-}
-
-.mobile h2 {
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -125,7 +119,7 @@ a:hover, a:focus {
 	margin: 10% 0 0 0;
 }
 
-.mobile h2:first-of-type {
+.mobile h1:first-of-type {
 	margin: 0;
 }
 
