@@ -12,14 +12,8 @@ a:hover, a:focus {
 	text-decoration: underline;
 }
 
-p {
-	font-size: 14px;
-	font-weight: 400;
-}
-
 .container {
-	width: 90%;
-	max-width: 800px;
+	width: 800px;
 	margin: 0 auto;
 }
 
@@ -27,29 +21,30 @@ p {
 	font-weight: 500;
 }
 
-.copy {
-	width: 480px;
-	margin: 40px 40px;
+.underline {
+	text-decoration: underline;
 }
 
-.copy h1{
-	font-size: 20px;
-	font-weight: 500;
+.copy {
+	width: 480px;
+	margin: 40px 40px 0 40px;
+}
+
+.copy h1 {
+	font-size: 22.4px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.copy h2 {
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 0;
 }
 
 .copy p {
 	font-size: 16px;
 	font-weight: 300;
-}
-
-.underline {
-	text-decoration: underline;
-}
-
-#parking {
-	width: 80%;
-	max-width: 800px;
-	margin: 20% auto;
 }
 
 #content {
@@ -107,20 +102,40 @@ p {
 }
 
 #nav p {
+	font-size: 14px;
+	font-weight: 400;
 	margin: 7px 0 0 0;
 }
 
-#mobile {
+.mobile {
 	display: none;
-	margin-top: 10%;
 }
 
-#mobile img {
+.mobile h1 {
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0 0 10% 0;
+}
+
+.mobile h2 {
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	margin: 10% 0 0 0;
+}
+
+.mobile h2:first-of-type {
+	margin: 0;
+}
+
+.mobile img {
 	width: 100%;
+	margin: 5% 0 0 0;
 }
 
-#mobile a {
-	text-decoration: underline;
+.mobile a {
+	text-decoration: none;
 }
 
 @media (max-width: 799px) {
@@ -128,14 +143,27 @@ p {
 		margin: 10% 0;
 	}
 
+	a {
+		text-decoration: underline;
+	}
+
+	.container {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	.mobile {
+		display: block;
+	}
+
 	.copy {
-		width: 100%;
-		margin: 40px 0;
+		width: 80%;
+		margin: 10% 10% 0 10%;
 	}
 
 	#content {
-		width: 80%;
-		margin: 0 10%;
+		width: 100%;
+		margin: 0 0 10% 0;
 	}
 
 	#greeting h1 {
@@ -148,9 +176,5 @@ p {
 
 	#nav {
 		display: none;
-	}
-
-	#mobile {
-		display: block;
 	}
 }
