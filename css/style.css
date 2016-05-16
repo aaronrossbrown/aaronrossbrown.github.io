@@ -74,7 +74,7 @@ a:hover, a:focus {
 }
 
 #links {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1.4px;
@@ -170,7 +170,7 @@ a:hover, a:focus {
 
 @media (max-width: 799px) {
 	body {
-		margin: 20% 0 10% 0;
+		margin: 21% 0 10% 0;
 	}
 
 	.container {
