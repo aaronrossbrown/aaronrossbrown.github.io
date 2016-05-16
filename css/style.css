@@ -3,6 +3,26 @@ body {
 	margin: 100px 0;
 }
 
+h1 {
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	margin: 10% 0 0 0;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
@@ -25,28 +45,6 @@ a:hover, a:focus {
 	text-decoration: underline;
 }
 
-.copy {
-	width: 480px;
-	margin: 40px 40px 0 40px;
-}
-
-.copy h1 {
-	font-size: 22.4px;
-	font-weight: 400;
-	margin-bottom: 0;
-}
-
-.copy h2 {
-	font-size: 16px;
-	font-weight: 400;
-	margin-top: 0;
-}
-
-.copy p {
-	font-size: 16px;
-	font-weight: 300;
-}
-
 #content {
 	width: 560px;
 	display: inline-block;
@@ -65,25 +63,24 @@ a:hover, a:focus {
 	font-weight: 300;
 	margin: 0;
 	opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
 }
 
 #greeting h2 {
 	font-size: 24px;
 	font-weight: 300;
+	text-transform: none;
+	letter-spacing: 0px;
 	margin: 20px 0 0 0;
 }
 
 #links {
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 16px;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1.4px;
 }
 
-#nav {
+#sidebar {
 	width: 160;
 	display: inline-block;
 	vertical-align: top;
@@ -91,40 +88,40 @@ a:hover, a:focus {
 	margin: 0 20px;
 }
 
-#nav h1 {
-	font-size: 20px;
-	font-weight: 500;
-	margin: 0;
+#sidebar h2 {
+	font-size: 14px;
 }
 
-#nav h2 {
+#sidebar p {
 	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 1.4px;
-	margin: 15px 0 0 0;
+	font-weight: 300;
+	margin: 10px 0 0 0;
+	line-height: 14px;
 }
 
-#nav p {
-	font-size: 14px;
-	font-weight: 400;
-	margin: 7px 0 0 0;
+.copy {
+	width: 480px;
+	margin: 40px 40px 0 40px;
+}
+
+.copy h1 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-bottom: 0;
+}
+
+.copy p {
+	font-size: 16px;
+	font-weight: 300;
 }
 
 .mobile {
 	display: none;
 }
 
-.mobile h1 {
-	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 1.4px;
-	margin: 10% 0 0 0;
-}
-
-.mobile h1:first-of-type {
-	margin: 0;
+.mobile a {
+	text-decoration: none;
 }
 
 .mobile img {
@@ -132,17 +129,48 @@ a:hover, a:focus {
 	margin: 5% 0 0 0;
 }
 
-.mobile a {
-	text-decoration: none;
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 80%;
+	background-color: #fff;
+	padding: 10% 10% 0 10%;
+}
+
+#nav li {
+	list-style: none;
+	display: inline;
+}
+
+#nav ul {
+	height: 10%;
+	padding: 0 0 5% 0;
+	margin: 0;
+}
+
+#nav a {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+}
+
+#nav .right {
+	float: right;
+}
+
+#nav .brand {
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: none;
+	letter-spacing: normal;
 }
 
 @media (max-width: 799px) {
 	body {
-		margin: 10% 0;
-	}
-
-	a {
-		text-decoration: underline;
+		margin: 20% 0 10% 0;
 	}
 
 	.container {
@@ -150,18 +178,13 @@ a:hover, a:focus {
 		margin: 0 10%;
 	}
 
-	.mobile {
-		display: block;
-	}
-
-	.copy {
-		width: 100%;
-		margin: 10% 0 0 0;
-	}
-
 	#content {
 		width: 100%;
-		margin: 0 0 10% 0;
+		margin: 0;
+	}
+
+	#greeting {
+		margin-top: 10%;
 	}
 
 	#greeting h1 {
@@ -172,7 +195,16 @@ a:hover, a:focus {
 		font-size: 18px;
 	}
 
-	#nav {
+	.copy {
+		width: 100%;
+		margin: 10% 0 0 0;
+	}
+
+	#nav, #thumbnails {
+		display: block;
+	}
+
+	#sidebar {
 		display: none;
 	}
 }
