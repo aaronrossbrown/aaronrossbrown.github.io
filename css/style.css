@@ -206,7 +206,7 @@ a:hover, a:focus {
 		font-size: 18px;
 	}
 
-	#thumbnails a:focus {
+	#thumbnails a:visited {
 		border-bottom: none;
 	}
 
