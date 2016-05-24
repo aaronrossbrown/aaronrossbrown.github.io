@@ -118,6 +118,10 @@ a:hover, a:focus {
 	margin-bottom: 0;
 }
 
+.copy h2 {
+	margin-top: 32px;
+}
+
 .copy p {
 	font-size: 16px;
 	font-weight: 300;
@@ -200,6 +204,10 @@ a:hover, a:focus {
 
 	#greeting h2 {
 		font-size: 18px;
+	}
+
+	#thumbnails a:focus {
+		border-bottom: none;
 	}
 
 	.copy {
