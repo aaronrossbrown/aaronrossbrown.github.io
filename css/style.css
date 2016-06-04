@@ -62,7 +62,15 @@ a:hover, a:focus {
 #content img {
 	width: 100%;
 	display: block;
-	margin: 0 auto;
+	margin: 40px auto;
+}
+
+#content img:first-child {
+	margin-top: 0;
+}
+
+#content img:last-child {
+	margin-bottom: 0;
 }
 
 #greeting h1 {
