@@ -73,6 +73,13 @@ a:hover, a:focus {
 	margin-bottom: 0;
 }
 
+#greeting {
+	width: 560px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 20px;
+}
+
 #greeting h1 {
 	font-size: 40px;
 	font-weight: 300;
@@ -86,6 +93,21 @@ a:hover, a:focus {
 	text-transform: none;
 	letter-spacing: 0px;
 	margin: 20px 0 0 0;
+}
+
+#thumbnails {
+	margin: 20px 0 0 20px;
+}
+
+#thumbnails img {
+	
+}
+
+#thumbnails a {
+	width: 240px;
+	display: inline-block;
+	margin: 20px 20px 0 0;
+	border-bottom: none;
 }
 
 #links {
@@ -112,6 +134,11 @@ a:hover, a:focus {
 	font-weight: 300;
 	margin: 10px 0 0 0;
 	line-height: 14px;
+}
+
+#thumbs img {
+	margin: 40px 0 40px 0;
+	width: 230px;
 }
 
 .copy {
@@ -197,7 +224,7 @@ a:hover, a:focus {
 		margin: 0 10%;
 	}
 
-	#content {
+	#content, #greeting {
 		width: 100%;
 		margin: 0;
 	}
@@ -214,7 +241,7 @@ a:hover, a:focus {
 		font-size: 18px;
 	}
 
-	#thumbnails a:visited {
+	#mobile-thumbnails a:visited {
 		border-bottom: none;
 	}
 
@@ -223,11 +250,11 @@ a:hover, a:focus {
 		margin: 10% 0 0 0;
 	}
 
-	#nav, #thumbnails {
+	#nav, #mobile-thumbnails {
 		display: block;
 	}
 
-	#sidebar {
+	#thumbnails, #sidebar {
 		display: none;
 	}
 }
