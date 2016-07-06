@@ -100,10 +100,14 @@ a:hover, a:focus {
 }
 
 .thumbnails a {
-	width: 240px;
+	width: 258px;
 	display: inline-block;
 	margin: 20px 20px 0 0;
 	border-bottom: none;
+}
+
+.thumbnails a:nth-child(2n) {
+	margin-right: 0;
 }
 
 #links {
@@ -132,14 +136,9 @@ a:hover, a:focus {
 	line-height: 14px;
 }
 
-#thumbs img {
-	margin: 40px 0 40px 0;
-	width: 230px;
-}
-
 .copy {
-	width: 480px;
-	margin: 40px 40px 0 40px;
+	width: 560px;
+	margin: 40px 0 0 0;
 }
 
 .copy h1 {
