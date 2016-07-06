@@ -95,15 +95,11 @@ a:hover, a:focus {
 	margin: 20px 0 0 0;
 }
 
-#thumbnails {
-	margin: 20px 0 0 20px;
+.thumbnails {
+	margin: 40px 0 0 20px;
 }
 
-#thumbnails img {
-	
-}
-
-#thumbnails a {
+.thumbnails a {
 	width: 240px;
 	display: inline-block;
 	margin: 20px 20px 0 0;
@@ -254,7 +250,7 @@ a:hover, a:focus {
 		display: block;
 	}
 
-	#thumbnails, #sidebar {
+	.thumbnails, #sidebar {
 		display: none;
 	}
 }
