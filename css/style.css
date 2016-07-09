@@ -54,7 +54,7 @@ a:hover, a:focus, .active {
 .brand {
 	font-size: 32px;
 	font-weight: 500;
-	border: none;
+	border: none !important;
 }
 
 .link {
@@ -106,7 +106,17 @@ a:hover, a:focus, .active {
 	font-weight: 300;
 }
 
-/* mobile */
+/* content */
+
+#content * {
+	margin: 0 auto;
+}
+
+#content img {
+	width: 460px;
+}
+
+/* responsive */
 
 @media (max-width: 1059px) {
 	.container {
@@ -140,4 +150,23 @@ a:hover, a:focus, .active {
 	#thumbnails img {
 		margin: 20px 0 10px 0;
 	}
+}
+
+@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+ 
+.fade-in {
+	opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+ 
+	-webkit-animation-duration: 0.75s;
+	-moz-animation-duration: 0.75s;
+	animation-duration: 0.75s;
 }
