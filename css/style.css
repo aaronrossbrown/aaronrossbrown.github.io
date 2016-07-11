@@ -257,24 +257,29 @@ hr {
 
 /* bottom-nav */
 
-/*.bottom-link {
-	font-size: 24px;
+#bottom-nav {
+	text-align: center;
+}
+
+.bottom-link {
+	font-size: 16px;
 	font-weight: 300;
+	display: inline-block;
 }
 
 .bottom-link.left {
 	float: left;
+	text-align: left;
 }
 
 .bottom-link.center {
 	text-align: center;
-	margin: 0 auto;
-	margin-left: 208px;
 }
 
 .bottom-link.right {
 	float: right;
-}*/
+	text-align: right;
+}
 
 /* responsive */
 
@@ -316,6 +321,10 @@ hr {
 		width: 100%;
 		margin: 0;
 		padding: 0;
+	}
+
+	#bottom-nav, hr:last-of-type {
+		display: none;
 	}
 }
 
