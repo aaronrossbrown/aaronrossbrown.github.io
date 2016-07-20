@@ -240,13 +240,22 @@ hr {
 	margin-bottom: 30px;
 }
 
-/* quotes */
+/* lists and quotes */
 
-#content .copy .quote {
+#content .copy .quote, #content .copy .list {
 	width: 460px;
 	display: block;
 	margin: 30px auto;
 }
+
+#content .copy .list {
+	list-style-position: inside;
+}
+
+#content .copy .list li {
+	margin-bottom: 10px;
+}
+
 
 #content .copy p.quote-source {
 	font-size: 16px;
@@ -312,7 +321,7 @@ hr {
 }
 
 @media (max-width: 774px) {
-	#content img, #content .copy, #content .copy .quote {
+	#content img, #content .copy, #content .copy .quote, #content .copy .list {
 		width: 100%;
 	}
 
