@@ -248,14 +248,9 @@ hr {
 	margin: 30px auto;
 }
 
-#content .copy .list {
-	list-style-position: inside;
-}
-
 #content .copy .list li {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
-
 
 #content .copy p.quote-source {
 	font-size: 16px;
@@ -332,7 +327,7 @@ hr {
 		padding: 0;
 	}
 
-	#bottom-nav, hr:last-of-type {
+	#bottom-nav {
 		display: none;
 	}
 }
