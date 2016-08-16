@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Aaron Brown</title>
+	<title>Stepnote &middot; Aaron Brown</title>
 
 	<link href='https://fonts.googleapis.com/css?family=Yantramanav:300,400,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -48,26 +48,29 @@
 					</div>
 				</div>
 				<hr>
-				<!--<h3>Context</h3>
+				<h3>Context</h3>
 				<h4>The Data Narratives of Choreographers</h4>
-				<p>The process of choreographing a dance routine is complex. </p>
+				<p>The process of choreographing a dance routine is complex. First, choreographers must choose the music, often mixing and mashing different songs for a routine. Then, they both take in and put out a lot of information, consuming inspiration and moves from YouTube videos and other dances to produce the steps and formations of a new routine. Finally, they practice, often sharing their choreography with others to learn. Information and data play huge roles in a choreographer's process.</p>
 			</div>
 			<div class="clearfix img-row">
 				<img src="img/stepnote/dance.jpg"></img>
 				<p class="img-caption">Dance routines must be carefully choreographed and constructed.</p>
 			</div>
 			<div class="copy">
-				<hr>-->
+				<hr>
 				<h3>Problem</h3>
 				<h4>Understanding Choreographers' Behavior</h4>
 				<p>Focusing in on designing a tool for choreography, we first talked to our main stakeholders: the choreographers themselves. Meeting with a wide range of choreographers from classical Indian dance to hip hop, we wanted to understand how choreographers chose music, looked for inspiration, and constructed their dance routines.</p>
 				<p>Two things were clear and evident by the end of our interviews. First, the process behind choreography varies person to person and is often unique, with some users taking detailed notes with timestamps and others taking minmal or no notes at all. Second, every choreographer struggled to recall things, whether it was an inspiring dance move from a YouTube video, or the latest set of steps they chose when they last sat down to choreograph.</p>
-				<!--<p>To condense the diverse set of skill levels, behaviors, and attitudes of the choreographers we talked to, we created three user personas to design for.</p>
+				<p>To condense the diverse set of skill levels, behaviors, and attitudes of the choreographers we talked to, we created three user personas to design for.</p>
 				<ul class="list">
-					<li>Freestyle Freddie: </li>
-					<li>Structured Shilpa: </li>
-					<li>Novice Nancy: </li>
-				</ul>-->
+					<p class="bold">Freestyle Freddie</p>
+					<p>Freddie is a creative when it comes to his choreography, and he picks music that really "speaks to him." He gleans inspiration from the melodies and rhythms of the music, and relies on his mental notes.</p>
+					<p class="bold">Structured Shilpa</p>
+					<p>Shilpa records all her steps and ideas in her process, often taking videos of her movements. She relies on a specific dictionary of steps, meaning she is often limited to only the steps that come to mind.</p>
+					<p class="bold">Novice Nancy</p>
+					<p>Nancy is still learning choreography&emdash;she relies heavily on videos of other dances for inspiration. She often finds exciting steps, but has trouble incorporating them into her routines.</p>
+				</ul>
 				<hr>
 				<h3>Approach</h3>
 				<h4>Needfinding and Ideation</h4>
@@ -96,26 +99,39 @@
 				<p class="img-caption">We explored our questions quickly through Wizard of Oz prototypes.</p>
 			</div>
 			<div class="copy">
-				<!--<h4>Testing the Interface</h4>
-				<p></p>-->
+				<h4>Testing the Interface</h4>
+				<p>As we began to develop our idea into a working prototype, questions about the user interface and interactions began to arise.</p>
+				<ul class="list">
+					<p class="bold">Would users prefer to annotate moments or ranges?</p>
+					<p>With timestamp-linked annotations, one of our implementation questions was enabling users to annotate either specific moments or longer ranges in the music. While users appreciated the flexibility of annotating ranges, annotating singular moments was less confusing overall.<p>
+					<p class="bold">What time should be used for an annotation's timestamp?</p>
+					<p>There are two options here: once a user starts to type their note, or once a user enters and submits their annotation. Our users preferred the former, as mistakes while typing could shift their annotation timestamp in the latter case.<p>
+					<p class="bold">What might users make annotations about?</p>
+					<p>Users made notes and ideas on everything: references to YouTube videos, ideas for different steps, or possible formations for the group. We noticed that users often worked within specific categories of annotations.<p>
+				</ul>
 				<hr>
 				<h3>Solution</h3>
 				<h4>Stepnote, the Song Annotator</h4>
-				<p>We built our web application using HTML, CSS, and vanilla JavaScript. Before long, we had our working prototype, which you can explore <a href="http://stanford.edu/~ishitap/stepnote/" target="_blank" class="bold">here</a>. Our idea and app eventually earned an honorable mention at our class' final presentations. You can also see the poster for our presentation <a href="img/stepnote/poster.pdf" target="_blank" class="bold">here</a>.</p>
+				<p>We built our web application using HTML, CSS, and vanilla JavaScript. Before long, we had our working prototype, <a href="http://stanford.edu/~ishitap/stepnote/" target="_blank" class="bold">which you can explore</a>. You can also see <a href="img/stepnote/poster.pdf" target="_blank" class="bold">the poster for our presentation</a>.</p>
 			</div>
 			<div class="clearfix img-row">
 				<img src="img/stepnote/screenshot.jpg">
 				<p class="img-caption">A screenshot of the final version of our prototype.</p>
 			</div>
 			<div class="copy">
-				<img src="img/stepnote/poster.jpg">
-				<p class="img-caption">Our poster for final presentations.</p>
-				<!--<hr>
+				<p>Here's a quick run-down of Stepnote's main features:</p>
+				<ul class="list">
+					<p class="bold">Simple waveform visualization and playback</p>
+					<p>Looking towards SoundCloud for inspiration, we leveraged a JavaScript library to integrate a visual waveform of the music being choreographed for. Users appreciated the simple playback controls and overlayed annotations.<p>
+					<p class="bold">Lightweight interface for ease of use</p>
+					<p>The interface isn't complex, and it makes a lot of sense: you can use your spacebar to pause and play music just like most apps, and annotations are highlighted as the music play.<p>
+					<p class="bold">Easy annotations with timestamps and motifs</p>
+					<p>Timestamp-linked annotations mean that users don't have to pause, check, and manually enter the time each time they want to note something. And motifs offer a functionality akin to hashtags for grouping notes.<p>
+				</ul>
+				<hr>
 				<h3>Impact</h3>
 				<h4>Reception and Feedback</h4>
-				<p></p>-->
-				<!--<h4>Features for the Future</h4>
-				<p></p>-->
+				<p>Choreographers loved Stepnote, and our teaching staff loved our process and output. Users described our prototype as "surprisingly natural," "sick," and "a dream." The idea was well-received and we received an honorable mention at our final presentations. Looking toward the future, our users saw potential in our product, and with more time, we would've loved to add multi-user annotation and shareable links for collaboration.</p>
 				<hr>
 			</div>
 			<div id="bottom-nav">
