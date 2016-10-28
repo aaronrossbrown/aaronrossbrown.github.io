@@ -21,7 +21,6 @@ p {
 	font-size: 18px;
 	line-height: 180%;
 	color: #444;
-	width: 100%;
 }
 
 p:not(:first-of-type) {
