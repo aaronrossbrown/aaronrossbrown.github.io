@@ -12,7 +12,7 @@ h1 {
 	font-weight: 300;
 	font-size: 36px;
 	line-height: 120%;
-	color: #444;
+	color: #777;
 }
 
 p {
@@ -20,7 +20,7 @@ p {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 180%;
-	color: #444;
+	color: #777;
 }
 
 p:not(:first-of-type) {
@@ -34,18 +34,17 @@ p#footer {
 
 a, a:visited {
 	text-decoration: none;
-	color: #444;
-	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	color: #777;
 
-	-webkit-transition: border 0.75s ease;
-  -moz-transition: border 0.75s ease;
-  -ms-transition: border 0.75s ease;
-  -o-transition: border 0.75s ease;
-  transition: border 0.75s ease;
+	-webkit-transition: 0.25s ease-in, 0.5s ease-out;
+  -moz-transition: 0.25s ease-in, 0.5s ease-out;
+  -ms-transition: 0.25s ease-in, 0.5s ease-out;
+  -o-transition: 0.25s ease-in, 0.5s ease-out;
+  transition: 0.25s ease-in, 0.5s ease-out;
 }
 
 a:hover, a:focus {
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
+	color: #000;
 }
 
 @media (max-width: 699px) {
@@ -63,7 +62,7 @@ a:hover, a:focus {
 @-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
  
-.fade-in {
+.fade {
 	opacity: 0;
 	-webkit-animation: fadeIn ease-in 1;
 	-moz-animation: fadeIn ease-in 1;
