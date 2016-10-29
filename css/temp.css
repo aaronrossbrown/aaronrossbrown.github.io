@@ -47,7 +47,7 @@ a:hover, a:focus {
 	color: #000;
 }
 
-@media (max-width: 699px) {
+@media only screen and (max-width: 699px) {
 	.container {
 		width: 80%;
 		margin: 10% 10%;
@@ -55,6 +55,10 @@ a:hover, a:focus {
 
 	p#footer {
 		position: initial;
+	}
+
+	a {
+		color: #000 !important;
 	}
 }
 
