@@ -1,0 +1,35 @@
+body {
+	margin: 80px 80px;
+}
+
+div.thing {
+	float: left;
+	margin-bottom: 48px;
+}
+
+div.thing:not(:last-child) {
+	margin-right: 48px;
+}
+
+img {
+	max-width: 240px;
+	max-height: 240px;
+	width: auto;
+	height: auto;
+}
+
+p {
+	font-family: "Work Sans";
+	font-size: 16px;
+	margin: 0 !important;
+	line-height: 20px;
+}
+
+p.brand {
+	font-weight: 400;
+	margin-top: 24px !important;
+}
+
+p.description {
+	font-weight: 300;
+}
