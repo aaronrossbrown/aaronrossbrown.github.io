@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+.container {
+  margin: 80px 80px;
+  width: 450px;
+}
+
+h1 {
+  font-family: "Rubik";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 120%;
+  color: #000;
+  letter-spacing: 0.02em
+}
+
+p {
+  font-family: "Rubik";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 180%;
+  color: #000;
+  letter-spacing: 0.02em
+}
+
+p:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+p#footer {
+   position: absolute;
+   bottom: 80px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+a:hover, a:focus {
+  color: #777;
+
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+@media only screen and (max-width: 699px) {
+  .container {
+    width: 80%;
+    margin: 10% 10%;
+  }
+
+  p#footer {
+    position: initial;
+  }
+
+  a {
+    color: #000 !important;
+  }
+}
+
+@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+ 
+.fade {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+ 
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
