@@ -169,10 +169,6 @@ a:hover, a:focus {
   text-align: center;
 }
 
-.caption p {
-  font-size: 15px;
-}
-
 /*#kofa {
   background: linear-gradient(to left top, #4b0f84, #5183e0);
 }
@@ -200,20 +196,6 @@ a:hover, a:focus {
 
   body {
     padding: 30px 20px;
-  }
-
-  /* Text */
-
-  .row#nav p, .row#footer p {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .row.text [class*='col-']:first-of-type p {
-    font-size: 28px;
   }
 
   /* Grid & Layout */
