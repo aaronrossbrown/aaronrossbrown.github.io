@@ -205,15 +205,15 @@ a:hover, a:focus {
   /* Text */
 
   .row#nav p, .row#footer p {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .row.text [class*='col-']:first-of-type p {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   /* Grid & Layout */
