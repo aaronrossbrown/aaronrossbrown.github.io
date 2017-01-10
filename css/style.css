@@ -45,8 +45,9 @@ a:hover, a:focus {
 }
 
 .row.text [class*='col-']:first-of-type p {
-    font-size: 28px;
-  }
+  font-size: 32px;
+  padding-bottom: 0;
+}
 
 /* Grid & Layout */
 
