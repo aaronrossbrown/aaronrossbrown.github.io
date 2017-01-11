@@ -174,11 +174,11 @@ li:not(:last-of-type) {
   display: none;
 }
 
-/*#kofa {
+#kofa {
   background: linear-gradient(to left top, #4b0f84, #5183e0);
 }
 
-#shorthand {
+/*#shorthand {
   background: linear-gradient(to left top, #4b0f84, #5183e0);
 }
 
