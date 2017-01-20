@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, p, li {
   line-height: 1.5;
 }
 
+span.bold {
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   color: #888;
@@ -43,7 +47,7 @@ a:hover, a:focus {
 }
 
 .row.text [class*='col-']:first-of-type p {
-  font-size: 32px;
+  font-weight: 400;
   padding-bottom: 0;
 }
 
