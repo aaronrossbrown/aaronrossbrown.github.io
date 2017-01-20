@@ -290,6 +290,6 @@ li:not(:last-of-type) {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 0.75s;
-  animation-delay: 0.75s;
+  animation-duration: 0.6s;
+  animation-delay: 1.4s;
 }
