@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scribe &middot; Aaron Brown</title>
 
+  <script src="https://use.typekit.net/ilh5fzr.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   <link href='https://fonts.googleapis.com/css?family=Rubik:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
@@ -24,27 +27,189 @@
     </div>
     <section class="fade" id="content">
       <div class="row text">
-        <div class="col-4-8 col-4-4">
-          <p>
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h1>
             Scribe (WIP)
-          </p>
+          </h1>
+          <h3>
+            UI/UX Design
+          </h3>
         </div>
         <div class="col-4-8 col-4-4">
           <p>
-            Scribe is a side project and rebound of <a href="../work/stepnote.html">Stepnote</a> that aims to help journalists, designers, and anyone else that does informational interviews. Users can use Scribe to record, transcribe, and annotate interviews and conversations.
+            Scribe is a voice transcription and annotation tool that I created as a side project. Though existing speech recognition technology can't transcribe full conversations perfectly quite yet, the concept has potential uses for students, user researchers, journalists, and more.
           </p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-8-8 col-4-4">
+          <img src="../img/conversation.jpg">
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Rebounding off Stepnote
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            Whenever I've conducted user research in the past, I've always fond myself frustrated by one particular thing&mdash;note-taking. Staying engaged and asking the right questions while simultaneously taking notes is a difficult skill that takes years to master. But as I worked on <a href="../work/stepnote.html">Stepnote</a>, I came to a realization: after spending so many hours creating a song annotation for choreographers, why couldn't I design a similar voice annotation tool for user researchers?
+          </p>
+          <h4>
+            Challenge: Design a voice annotation tool to help transcribe and annotate conversations, lectures, interviews, discussions, and more.
+          </h4>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Reducing the Scope
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            When it comes to a voice transcription and annotation tool, there are a myriad number of possible use cases and users. Students can take notes on a professor's lecture as it is transcribed in real-time, journalists can refer back to their interviews for quotations, and user researchers can focus on user behavior instead of frantically taking notes while testing. One could even use such a tool to record and refer to late-night conversations with friends (arguably the best kind of conversations).
+          </p>
+          <p>
+            That being said, with so many possibilites comes countless questions. How might students record their lectures and take notes simultaneously? How would journalists incorporate other media like photos and videos into interview recordings? Could user researchers link their voice recordings to specific tests? To move forward with a reasonable scope, I had to add some constraints:
+          </p>
+          <ul>
+            <li>
+              <p>
+                The tool would not support recording or real-time transcription.
+              </p>
+              <p>
+                While students especially could benefit from real-time transcription of professors' lectures, the fact remains that current speech recognition libraries are not accurate enough yet. As for not supporting recording, there are a number of voice recording apps available.
+              </p>
+            </li>
+            <li>
+              <p>
+                The tool would be purely audio and text-focused.
+              </p>
+              <p>
+                While users might want to incorporate photos or videos from their voice recordings, the app can quickly become cluttered with superfluous functionality. I decided to concentrate on creating the simplest and polished experience possible.
+              </p>
+            </li>
+            <li>
+              <p>
+                The tool would be web-based, and for all kinds of users.
+              </p>
+              <p>
+                By choosing not to specialize for a single profession, the app could be useful to a wider array of users as a pure voice annotation tool. And without a recording fucntion, a mobile companion app would be unnecessary.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8-8 col-4-4">
+          <img src="../img/examples.jpg">
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Choosing a Layout
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            Early on, I looked into existing interactive transcripts and annotations. Examples from <a href="https://www.ted.com/talks/dan_gilbert_asks_why_are_we_happy/transcript?language=en">TED</a> and <a href="http://www.vox.com/a/president-trump-inauguration-speech-transcript-annotations">Vox</a> shown above offered inspiration: TED's interface makes phrases clickable to link to specific moments in the talk, while Vox's annotations afforded the ability for multiple correspondents to interject their responses to ideas in Trump's inauguration speech.
+          </p>
+          <p>
+            Wanting to allow annotations without disrupting the vertical flow of the transcript itself, I opted for a style similar to the <a href="https://en.wikipedia.org/wiki/Cornell_Notes">Cornell method</a> of note-taking: transcript emphasized in a left column, and annotations grouped in the right column.
+          </p>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Optimizing for Legibility
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            With such a text-heavy interface, I wanted reading to be as effortless as possible, whether users were reading the transcript or their own annotations. To aid the reader, I did the following things:
+          </p>
+          <ul>
+            <li>
+              <p>
+                Optimize the text size and whitespace
+              </p>
+              <p>
+                I took into account typography best practices: with respect to the body text size, line spacing should be 120-145%, line length should be 45-90 characters, and spacing between paragraph should be 50-100%.
+              </p>
+            </li>
+            <li>
+              <p>
+                Contrast by color and typeface
+              </p>
+              <p>
+                I selected Minion, among the most legible serif typefaces available, for the transcript text, and San Francisco, an equally legible sans serif, for the annotations and menu. I also chose a blue for highlights and annotations, leaving black purely for the transcript and its playback controls.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            The Listening Experience
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            
+          </p>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Highlighting and Note-Taking
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            
+          </p>
+        </div>
+      </div> -->
       <div class="row">
         <div class="col-8-8 col-4-4">
           <img src="../img/scribe.jpg">
         </div>
       </div>
       <!-- <div class="row text">
-        <div class="col-4-8 col-4-4">
-          <p>
-            Introduction
-          </p>
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Notes for Future Improvement
+          </h2>
         </div>
         <div class="col-4-8 col-4-4">
           <p>
