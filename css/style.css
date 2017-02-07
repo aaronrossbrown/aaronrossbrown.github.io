@@ -160,7 +160,7 @@ a:hover, a:focus {
 }
 
 ul, ol {
-  padding: 20px 40px;
+  padding: 0px 40px 20px 40px;
 }
 
 li:not(:last-of-type) {
