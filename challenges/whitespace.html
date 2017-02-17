@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whitespace Challenge &middot; Aaron Brown</title>
+
+  <script src="https://use.typekit.net/ilh5fzr.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row" id="nav">
+      <div class="col-6-8 col-2-4">
+        <p>Aaron Brown</p>
+      </div>
+      <div class="col-1-8 col-1-4 right">
+        <p><a href="../index.html">Work</a></p>
+      </div>
+      <div class="col-1-8 col-1-4 right">
+        <p><a href="../about.html">About</a></p>
+      </div>
+    </div>
+    <section class="fade" id="content">
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h1>
+            Uber Data Platform
+          </h1>
+          <h3>
+            UI/UX Design
+          </h3>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            While interviewing for the <a href="http://whitespacecrew.com/" target="_blank">Whitespace</a> design program, I was tasked to create a data platform for Uber in a week's time. To summarize <a href="../img/uber-challenge.pdf" target="_blank">the prompt</a>, the challenge was to design a tool that allows a marketing manager at Uber to easily query and visualize the Uber data set for presentation to potential marketing partners.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div> -->
+        <div class="col-8-8 col-4-4">
+          <img src="https://eng.uber.com/wp-content/uploads/2016/05/sf_header_slow.gif">
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Understanding Needs, Constraints, and Goals
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            I sought first and foremost to understand our marketing manager and target user, named Sandra. To give some background, she is working on a pitch for a promotional partnership with Live Nation that would allow Live Nation to provide subsidized rides to the Fox Theatre in Oakland for select shows.
+          </p>
+          <p>
+            Sandra will draw upon existing data to give more context to her pitch. The prompt is clear on what specific data points Sandra is looking for; however, it is initially unclear what overarching questions these data points are answering. Keeping the scenario in mind, I arrived at some of Sandra's business needs:
+          </p>
+          <ul>
+            <li>
+              <p>
+                Sandra needs to know the volume of relevant rides.
+              </p>
+              <p>
+                By seeking out the number of rides at specific evening times on both show and non-show nights, Sandra is looking to understand the increased demand and additional volume of Uber rides taken directly as a result of a concert at the Fox.
+              </p>
+            </li>
+            <li>
+              <p>
+                Sandra needs to know which riders to target.
+              </p>
+              <p>
+                In asking which Uber products riders use to get to the theatre and what neighborhoods rides originate from, Sandra is trying to understand the demographics so that she can determine which segments of riders to target.
+              </p>
+            </li>
+            <li>
+              <p>
+                Sandra needs to know the potential upside for both parties.
+              </p>
+              <p>
+                By understanding the average fares of rides to the concert venue, Sandra will be able to calculate projected revenue numbers and ROI for both Live Nation and Uber.
+              </p>
+            </li>
+          </ul>
+          <p>
+            While the exercise is rather exacting in the use cases of the platform, I still pursued more constraints beyond what was given. For example, knowing that Sandra is working on a deadline, likely on a monitor or laptop, dictates the tool should be web-based, responsive, and efficient. With the above business needs, along with other constraints, I summarized the goal for the platform:
+          </p>
+          <h4>
+            Goal: Design a web-based tool that allows a user to query the Uber data set quickly and efficiently, enabling them not only to visualize but understand and share relevant data. 
+          </h4>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Exploring Similar Interfaces
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            In my design process I tend to draw heavily upon other interfaces I've interacted with, often incorporating their components and elements. For this challenge, a particularly large number of comparable products came to mind: <a href="https://www.google.com/maps" target="_blank">Google Maps</a>, <a href="http://labs.strava.com/" target="_blank">Strava Labs</a>, <a href="https://www.remix.com/" target="_blank">Remix</a>, and <a href="https://www.automatic.com/" target="_blank">Automatic</a>. All of these interfaces allow users to query and visualize trips on a map, either on foot, bike, car, or public transit.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8-8 col-4-4">
+          <img src="../img/similar-interfaces.jpg">
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Components and Layout
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            When designing an interface from scratch, one of the first things I do is determine at a macro level what views will be needed to achieve the necessary functionality. Looking at the expected use cases as well as existing interfaces, I decided on having three views:
+          </p>
+          <ul>
+            <li>
+              <p>
+                Search and filter view
+              </p>
+              <p>
+                In this view, a user will be able to search for a event venue/location 
+              </p>
+            </li>
+            <li>
+              <p>
+                Map view
+              </p>
+              <p>
+                Though it can be argued that this tool can be built without a map, it is immensely helpful to have a map to provide visual reinforcement as to the locations being search and filter
+              </p>
+            </li>
+            <li>
+              <p>
+                Data visualization view
+              </p>
+              <p>
+                
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Querying and Filtering
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            Heatmap
+
+          </p>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Leveraging the Map
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            
+          </p>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Visualizing the Data
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            With data visualization, one of the most significant challenges is deciding what data is worth showing and what data isn't.
+          </p>
+        </div>
+      </div>
+      <div class="row text">
+        <div class="col-1-8 col-0-4">
+          &nbsp;
+        </div>
+        <div class="col-2-8 col-4-4">
+          <h2>
+            Reflection
+          </h2>
+        </div>
+        <div class="col-4-8 col-4-4">
+          <p>
+            I would've loved to work with engineers to prototype my proposed solution and get feedback testing on Uber employees. With my original goal weighing in mind, key metrics for usage and efficiency might have included number of weekly active users, number of queries entered per user per visit, and number of data visualizations shared.
+          </p>
+          <p>
+            Additionally, there are a wide variety of potential use cases and scenarios for this tool outside of helping in marketing partnership pitches. Assuming Uber would keep privacy and security in mind by anonymizing the data, Uber drivers could use the platform to understand rider demand better, and city planners could use Uber ride heatmaps as a proxy for traffic to better design public transit and roads (perhaps already created in <a href="https://movement.uber.com/cities">Uber Movement</a>).
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="row" id="footer">
+      <div class="col-4-8 col-2-4">
+        <p><a href="../index.html">Back to all projects</a></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48462623-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

@@ -55,7 +55,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  margin: 30px;
+  margin: 20px 40px;
   font-weight: 400;
 }
 
@@ -75,7 +75,7 @@ a:hover, a:focus {
 
 .row.text [class*='col-']:first-of-type p {
   font-size: 24px;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Grid & Layout */
@@ -155,16 +155,24 @@ a:hover, a:focus {
   margin-bottom: 40px;
 }
 
-.text p:not(:last-of-type) {
-  padding-bottom: 20px;
+.text p {
+  margin-bottom: 20px;
+}
+
+.text li > p {
+  margin-bottom: 0;
+}
+
+.text:last-child {
+  margin-bottom: 0;
 }
 
 ul, ol {
-  padding: 0px 40px 20px 40px;
+  margin: 20px 40px;
 }
 
 li:not(:last-of-type) {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Thumbs */
@@ -210,6 +218,10 @@ li:not(:last-of-type) {
   text-align: center;
 }
 
+.caption {
+  margin-top: 15px;
+}
+
 .mob-caption {
   display: none;
 }
@@ -249,6 +261,14 @@ li:not(:last-of-type) {
 
   h1.header {
     font-size: 32px;
+  }
+
+  h4 {
+    margin: 15px 0;
+  }
+
+  ul {
+    margin: 15px 0;r
   }
 
   /* Grid & Layout */
@@ -303,21 +323,21 @@ li:not(:last-of-type) {
   }
 
   .text p:not(:last-of-type) {
-    padding-bottom: 15px;
-  }
-
-  ul {
-    padding: 15px 30px;
+    margin-bottom: 15px;
   }
 
   li {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   /* Thumbs */
 
   #thumbs .row {
     margin: 15px 0;
+  }
+
+  .caption {
+    display: none;
   }
 
   .mob-caption {
