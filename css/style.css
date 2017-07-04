@@ -1,12 +1,15 @@
 @font-face {
 	font-family: 'Untitled Sans';
 	src: url(../fonts/UntitledSansWeb-Regular.woff);
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Untitled Sans';
 	src: url(../fonts/UntitledSansWeb-RegularItalic.woff);
-	font-style: italic, oblique;
+	font-weight: normal;
+	font-style: italic;
 }
 
 * {
