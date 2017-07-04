@@ -6,7 +6,7 @@
 @font-face {
 	font-family: 'Untitled Sans';
 	src: url(../fonts/UntitledSansWeb-RegularItalic.woff);
-	font-weight: italic;
+	font-style: italic, oblique;
 }
 
 * {
