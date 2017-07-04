@@ -1,31 +1,38 @@
 @font-face {
 	font-family: 'Untitled Sans';
-	src: url(fonts/UntitledSansWeb-Regular.woff);
+	src: url(../fonts/UntitledSansWeb-Regular.woff);
 }
 
 @font-face {
 	font-family: 'Untitled Sans';
-	src: url(fonts/UntitledSansWeb-RegularItalic.woff);
+	src: url(../fonts/UntitledSansWeb-RegularItalic.woff);
 	font-weight: italic;
+}
+
+* {
+	margin: 0;
 }
 
 body {
 	overflow: hidden;
 }
 
-#landing {
-	margin: 48px 0 0 48px;
+.container {
+	margin: 48px 24px;
+}
+
+#landing p {
 	font-family: 'Untitled Sans', sans;
 	font-size: 16px;
 	line-height: 160%;
 	color: #000;
 }
 
-#landing a {
+#landing p a {
 	text-decoration: none;
 	color: #000;
 }
 
-#landing a:hover {
+#landing p a:hover {
 	border-bottom: 2px solid;
 }
