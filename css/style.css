@@ -1,14 +1,20 @@
 @font-face {
-	font-family: 'Untitled Sans';
-	src: url(../fonts/UntitledSansWeb-Regular.woff);
-	font-weight: normal;
+	font-family: 'UntitledSansWeb';
+	src: url('../fonts/UntitledSansWeb-Regular.eot');
+	src: url('../fonts/UntitledSansWeb-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/UntitledSansWeb-Regular.woff2') format('woff2'),
+		 url('../fonts/UntitledSansWeb-Regular.woff') format('woff');
+	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Untitled Sans';
-	src: url(../fonts/UntitledSansWeb-RegularItalic.woff);
-	font-weight: normal;
+	font-family: 'UntitledSansWeb';
+	src: url('../fonts/UntitledSansWeb-RegularItalic.eot');
+	src: url('../fonts/UntitledSansWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/UntitledSansWeb-RegularItalic.woff2') format('woff2'),
+		 url('../fonts/UntitledSansWeb-RegularItalic.woff') format('woff');
+	font-weight: 400;
 	font-style: italic;
 }
 
@@ -21,21 +27,30 @@ body {
 }
 
 .container {
-	margin: 48px 24px;
+	margin: 48px 48px;
 }
 
 #landing p {
-	font-family: 'Untitled Sans', sans;
+	font-family: 'UntitledSansWeb';
 	font-size: 16px;
-	line-height: 160%;
-	color: #000;
+	line-height: 1.6;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 #landing p a {
 	text-decoration: none;
-	color: #000;
+	color: #000000;
 }
 
 #landing p a:hover {
 	border-bottom: 2px solid;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+	.container {
+		margin: 48px 24px;
+	}
 }
