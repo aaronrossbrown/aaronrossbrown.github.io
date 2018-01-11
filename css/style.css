@@ -187,10 +187,10 @@ a:hover .thumb {
 }
 
 #wilsonart .thumb .thumb-image {
-	height: 72%;
-	width: auto;
-	margin-left: calc(-1/2 * 72% * 0.7333);
-	margin-top:  calc(-1/2 * 72%);
+	width: 96%;
+	height: auto;
+	margin-left: calc(-1/2 * 96%);
+	margin-top:  calc(-1/2 * 96% * 0.5152);
 }
 
 #nextdoor .thumb .thumb-image {
