@@ -374,3 +374,15 @@ div.bottom-nav p {
 		font-size: 16px;
 	}
 }
+
+/* Fade */
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.fade {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  animation-delay: 0.4s;
+}
