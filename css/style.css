@@ -257,6 +257,29 @@ div.header {
 	margin: auto;
 }
 
+#wilsonart .header {
+	background: #EE2E2A;
+}
+
+#wilsonart .header img {
+	width: auto;
+	height: auto;
+	max-width: calc(100% - 40px);
+	max-height: 400px;
+}
+
+#wilsonart div.content img {
+	width: 100%;
+	max-width: 640px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+#wilsonart div.content img.wallboard {
+	padding-right: 40px;
+}
+
 #nextdoor .header img {
 	width: auto;
 	height: auto;
@@ -284,7 +307,7 @@ div.header {
 
 div.text {
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 64px auto;
 }
 
 div.text h1 {
