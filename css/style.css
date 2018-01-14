@@ -152,8 +152,24 @@ div.thumb-grid {
 	background: #000000;
 }
 
+#postmates .thumb img {
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-o-filter: blur(4px);
+	-ms-filter: blur(4px);
+	filter: blur(4px);
+}
+
 #scribe .thumb {
 	background: #2F80ED;
+}
+
+#scribe .thumb img {
+	-webkit-filter: blur(4px);
+	-moz-filter: blur(4px);
+	-o-filter: blur(4px);
+	-ms-filter: blur(4px);
+	filter: blur(4px);
 }
 
 #wilsonart .thumb {
