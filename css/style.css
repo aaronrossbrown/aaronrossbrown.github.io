@@ -43,10 +43,6 @@ nav.anchor p a, nav.anchor p {
 	color: #fff;
 }
 
-.content {
-	margin: 64px 0;
-}
-
 .container {
 	width: calc(100% - 128px);
 	margin: 0 auto;
@@ -116,6 +112,10 @@ nav div.container {
 
 /* Work */
 
+.content#work, .content#about {
+	padding: 64px 0;
+}
+
 div.thumb-grid {
 	display: grid;
 	grid-template-columns: calc(50% - 16px) calc(50% - 16px);
@@ -152,25 +152,36 @@ div.thumb-grid {
 	background: #000000;
 }
 
-#postmates .thumb img {
-	-webkit-filter: blur(4px);
-	-moz-filter: blur(4px);
-	-o-filter: blur(4px);
-	-ms-filter: blur(4px);
-	filter: blur(4px);
+#growing-postmates .thumb {
+	background: #00AEAA;
+}
+
+#growing-postmates .thumb .thumb-image {
+	height: 80%;
+	width: auto;
+	margin-left: calc(-1/2 * 80% * 0.4851);
+	margin-top:  calc(-1/2 * 80%);
+}
+
+#growing-postmates .thumb img {
+	-webkit-filter: blur(2px);
+	-moz-filter:    blur(2px);
+	-o-filter:      blur(2px);
+	-ms-filter:     blur(2px);
+	filter:         blur(2px);
 }
 
 #scribe .thumb {
 	background: #2F80ED;
 }
 
-#scribe .thumb img {
-	-webkit-filter: blur(4px);
-	-moz-filter: blur(4px);
-	-o-filter: blur(4px);
-	-ms-filter: blur(4px);
-	filter: blur(4px);
-}
+/*#scribe .thumb img {
+	-webkit-filter: blur(2px);
+	-moz-filter:    blur(2px);
+	-o-filter:      blur(2px);
+	-ms-filter:     blur(2px);
+	filter:         blur(2px);
+}*/
 
 #wilsonart .thumb {
 	background: #EE2E2A;
@@ -243,17 +254,22 @@ div.elsewhere p {
 
 div.header {
 	background: #000;
-	height: 540px;
+	height: 100vh;
 }
 
 /* Case Study */
 
 .case-study section {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 64px 0;
 }
 
 .case-study section:last-of-type {
 	border-bottom: none;
+}
+
+.case-study#postmates div.content div.image img {
+	width: 100%;
 }
 
 .header {
@@ -271,6 +287,108 @@ div.header {
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+
+#postmates .header {
+	background: #000;
+}
+
+#postmates .header img {
+	width: auto;
+	height: auto;
+	max-width: calc(100% - 40px);
+	max-height: 520px;
+}
+
+#postmates section.solution {
+	background: #000;
+	border-bottom: none;
+}
+
+#postmates section.solution p, #postmates section.solution h1 {
+	color: #fff;
+}
+
+#postmates div.content img {
+	width: auto;
+	height: auto;
+	max-width: 720px;
+	max-height: 520px;
+	display: block;
+	margin: 0 auto;
+}
+
+.block-text {
+	max-width: calc(600px - 64px);
+	margin: 32px auto;
+}
+
+.block-text p {
+	line-height: 1.75;
+}
+
+.one-col-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 24px;
+	margin: 64px auto;
+}
+
+.two-col-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 320px);
+	grid-gap: 24px;
+	justify-content: center;
+	margin: 64px auto;
+}
+
+.three-col-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 320px);
+	grid-gap: 24px;
+	justify-content: center;
+	margin: 64px auto;
+}
+
+p.caption, p.img-caption {
+	text-align: center;
+	font-style: italic;
+	font-size: 16px;
+	margin: 12px auto 32px;
+	max-width: 320px;
+}
+
+.principles-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 48px 48px;
+	margin: 64px auto;
+}
+
+p.principle-number {
+	font-size: 48px;
+	line-height: 1.333;
+}
+
+.principle h2 {
+	font-size: 24px;
+	line-height: 1.333;
+	margin-bottom: 16px;
+}
+
+.principle p {
+	line-height: 1.75;
+}
+
+#scribe .header {
+	background: #2F80ED;
+}
+
+#scribe .header img {
+	width: auto;
+	height: auto;
+	max-width: calc (100% - 40px);
+	max-height: 432px;
 }
 
 #wilsonart .header {
@@ -323,21 +441,56 @@ div.header {
 
 div.text {
 	max-width: 600px;
-	margin: 64px auto;
+	margin: 0 auto;
+}
+
+section:first-child {
+	margin-top: 0;
+}
+
+section:last-child {
+	margin-bottom: 0;
+}
+
+.spaced {
+	margin-bottom: 32px !important;
 }
 
 div.text h1 {
 	font-family: 'UntitledSansWeb';
 	font-size: 32px;
+	margin-bottom: 16px;
+	line-height: 1.333333;
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 1.5;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 1.333333;
+	margin-bottom: 8px;
+}
+
+section div.text h1:not(:first-of-type) {
 	margin-top: 48px;
-	margin-bottom: 24px;
-	text-align: center;
 }
 
 div.text p {
 	font-size: 18px;
+	margin-top: 16px;
+	line-height: 1.777777;
+}
+
+div.text p.section-header {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	margin-top: 0;
 	margin-bottom: 16px;
-	line-height: 1.8;
 }
 
 div.bottom-nav {
@@ -358,23 +511,23 @@ div.bottom-nav p {
 @media only screen and (max-width: 768px) {
 	/* Global */
 
-	.content {
-		margin: 20px 0;
+	.content#work, .content#about {
+		padding: 24px 0;
 	}
 
 	.container {
-		width: calc(100% - 40px);
+		width: calc(100% - 48px);
 	}
 
 	/* Nav */
 
 	nav {
-		margin-bottom: 20px;
+		margin-bottom: 24px;
 	}
 
 	nav.anchor {
-		margin-top: 20px;
-		margin-left: 20px;
+		margin-top: 24px;
+		margin-left: 24px;
 	}
 
 	.nav-links {
@@ -386,7 +539,7 @@ div.bottom-nav p {
 	div.thumb-grid {
 		grid-template-columns: 100%;
 		grid-template-rows: auto;
-		grid-gap: 20px;
+		grid-gap: 24px;
 	}
 
 	/* About */
@@ -394,7 +547,7 @@ div.bottom-nav p {
 	div.about-grid {
 		grid-template-columns: 100%;
 		grid-template-rows: auto;
-		grid-gap: 20px;
+		grid-gap: 24px;
 	}
 
 	/* Case Studies */
@@ -405,12 +558,49 @@ div.bottom-nav p {
 		max-height: 88%;
 	}*/
 
+	#postmates .header img {
+		max-height: 432px;
+	}
+
+	.case-study .container {
+		width: calc(100% - 48px);
+	}
+
+	.two-col-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.three-col-grid {
+		grid-template-columns: 1fr;
+	}
+
+	div.header {
+		height: 100vh;
+	}
+
+	.principles-grid {
+		grid-template-columns: 100%;
+	}
+
 	div.text h1 {
 		font-size: 24px;
 	}
 
 	div.text p {
 		font-size: 16px;
+	}
+
+	div.text p.section-header {
+		font-size: 14px;
+		line-height: 1.428571;
+	}
+
+	.block-text {
+		margin: 32px 24px;
+	}
+
+	h4 {
+		font-size: 18px;
 	}
 
 	#wilsonart div.content img.wallboard {

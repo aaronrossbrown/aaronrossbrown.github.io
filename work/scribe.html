@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scribe &mdash; Aaron Brown</title>
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+  <div class="case-study" id="scribe">
+    <nav class="anchor">
+      <div class="nav-left">
+        <p><a href="../index.html" class="brand">Aaron Brown</a></p>
+        <p class="title">Scribe</p>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="container">
+        <img src="../img/scribe-window.png" class="fade-in"></img>
+      </div>
+    </div>
+    <div class="content">
+      <section>
+        <div class="container">
+          <div class="text">
+            <h1>
+              Starting Scribe
+            </h1>
+            <p>
+              Scribe is a voice transcription and annotation tool that I created as a side project. Though existing speech recognition technology can't transcribe full conversations perfectly quite yet, the concept has potential uses for students, user researchers, journalists, and more.
+            </p>
+            <p>
+              Whenever I've conducted user research in the past, I've always found myself frustrated by one particular thing&mdash;note-taking. Staying engaged and asking the right questions while simultaneously taking notes is a difficult skill that takes years to master. Why couldn't I design a similar voice annotation tool for user researchers?
+            </p>
+            <!-- <p style="padding: 0 64px; font-style: italic;">
+              Challenge: Design a voice annotation tool to help transcribe and annotate conversations, lectures, interviews, discussions, and more.
+            </p> -->
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="text">
+            <h1>
+              Reducing the scope
+            </h1>
+            <p>
+              When it comes to a voice transcription and annotation tool, there are a myriad number of possible use cases and users. Students can take notes on a professor's lecture as it is transcribed in real-time, journalists can refer back to their interviews for quotations, and user researchers can focus on user behavior instead of frantically taking notes while testing.
+            </p>
+            <p>
+              That being said, with so many possibilites comes countless questions. How might students record their lectures and take notes simultaneously? How would journalists incorporate other media like photos and videos into interview recordings? Could user researchers link their voice recordings to specific tests? To move forward with a reasonable scope, I had to add some constraints:
+            </p>
+          </div>
+          <div class="principles-grid">
+            <div class="principle">
+              <p class="principle-number">1&mdash;</p>
+              <h2>The tool would not support recording or real-time subscription.</h2>
+              <p>
+                While students especially could benefit from real-time transcription of professors' lectures, the fact remains that current speech recognition libraries are not accurate enough yet. As for not supporting recording, there are a number of voice recording apps available.
+              </p>
+            </div>
+            <div class="principle">
+              <p class="principle-number">2&mdash;</p>
+              <h2>The tool would be purely audio and text-focused.</h2>
+              <p>
+                While users might want to incorporate photos or videos from their voice recordings, the app can quickly become cluttered with superfluous functionality. I decided to concentrate on creating the simplest and polished experience possible.
+              </p>
+            </div>
+            <div class="principle">
+              <p class="principle-number">3&mdash;</p>
+              <h2>The tool would be web-based, and for all kinds of users.</h2>
+              <p>
+                By choosing not to specialize for a single profession, the app could be useful to a wider array of users as a pure voice annotation tool. And without a recording function, a mobile companion app would be unnecessary.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="text">
+            <h1>
+              Choosing a layout
+            </h1>
+            <p>
+              Early on, I looked into existing interactive transcripts and annotations. Examples from TED and Vox offered inspiration: TED's interface makes phrases clickable to link to specific moments in the talk, while Vox's annotations afforded the ability for multiple correspondents to interject their responses to ideas in Trump's inauguration speech.
+            </p>
+            <p>
+              Wanting to allow annotations without disrupting the vertical flow of the transcript itself, I opted for a style similar to the Cornell method of note-taking: transcript emphasized in a left column, and annotations grouped in the right column.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="text">
+            <h1>
+              Optimizing for legibility
+            </h1>
+            <p>
+              With such a text-heavy interface, I wanted reading to be as effortless as possible, whether users were reading the transcript or their own annotations. To aid the reader, I did the following things:
+            </p>
+            <p>
+              Optimize the text size and whitespace: I took into account typography best practices: with respect to the body text size, line spacing should be 120-145%, line length should be 45-90 characters, and spacing between paragraph should be 50-100%.
+            </p>
+            <p>
+              Contrast by color and typeface: I selected Minion, among the most legible serif typefaces available, for the transcript text, and San Francisco, an equally legible sans serif, for the annotations and menu. I also chose a blue for highlights and annotations, leaving black purely for the transcript and its playback controls.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48462623-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
