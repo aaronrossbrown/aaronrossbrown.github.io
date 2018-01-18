@@ -148,19 +148,17 @@ div.thumb-grid {
 	top: 50%;
 }
 
+#postmates {
+	grid-column: 1 / span 2;
+}
+
 #postmates .thumb {
 	background: #000000;
+	padding-bottom: 50%;
 }
 
 #growing-postmates .thumb {
 	background: #00AEAA;
-}
-
-#growing-postmates .thumb .thumb-image {
-	height: 80%;
-	width: auto;
-	margin-left: calc(-1/2 * 80% * 0.4851);
-	margin-top:  calc(-1/2 * 80%);
 }
 
 #growing-postmates .thumb img {
@@ -201,6 +199,13 @@ a:hover .thumb {
 }
 
 #postmates .thumb .thumb-image {
+	height: 80%;
+	width: auto;
+	margin-left: calc(-0.25 * 80% * 0.4851);
+	margin-top:  calc(-0.25 * 80%);
+}
+
+#growing-postmates .thumb .thumb-image {
 	height: 80%;
 	width: auto;
 	margin-left: calc(-1/2 * 80% * 0.4851);
@@ -316,6 +321,10 @@ div.header {
 	max-height: 520px;
 	display: block;
 	margin: 0 auto;
+}
+
+#postmates div.content img.type-system {
+	width: 100%;
 }
 
 .block-text {
@@ -542,6 +551,21 @@ div.bottom-nav p {
 		grid-gap: 24px;
 	}
 
+	#postmates {
+		grid-column: 1 / span 1;
+	}
+
+	#postmates .thumb {
+		padding-bottom: 100%;
+	}
+
+	#postmates .thumb .thumb-image {
+		height: 80%;
+		width: auto;
+		margin-left: calc(-0.5 * 80% * 0.4851);
+		margin-top:  calc(-0.5 * 80%);
+	}
+
 	/* About */
 
 	div.about-grid {
@@ -551,12 +575,6 @@ div.bottom-nav p {
 	}
 
 	/* Case Studies */
-
-	/*#nextdoor .header img {
-		width: 100%;
-		height: auto;
-		max-height: 88%;
-	}*/
 
 	#postmates .header img {
 		max-height: 432px;
