@@ -1,3 +1,14 @@
+<ifmodule mod_rewrite.c>
 RewriteEngine On
+# Add .html suffix to requested files
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+# Redirect if requested file doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
+</ifmodule>
+
+<ifmodule mod_dir>
+FallbackResource /index.html
+</ifmodule>
