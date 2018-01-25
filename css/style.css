@@ -593,10 +593,10 @@ div.bottom-nav p {
 	}
 
 	#postmates .thumb .thumb-image {
-		height: 80%;
-		width: auto;
-		margin-left: calc(-0.5 * 80% * 0.4851);
-		margin-top:  calc(-0.5 * 80%);
+		height: auto;
+		width: 80%;
+		margin-left: calc(-0.5 * 80%);
+		margin-top:  calc(-0.5 * 80% * 0.88798);
 	}
 
 	/* About */
