@@ -239,10 +239,14 @@ a:hover .thumb {
 }
 
 #wilsonart .thumb .thumb-image {
-	width: auto;
+	width: 80%;
+	height: auto;
+	margin-left: calc(-1/2 * 80%);
+	margin-top:  calc(-1/2 * 80% * 0.10204);
+	/*width: auto;
 	height: 80%;
 	margin-left: calc(-1/2 * 80% * 0.47857);
-	margin-top:  calc(-1/2 * 80%);
+	margin-top:  calc(-1/2 * 80%);*/
 }
 
 #nextdoor .thumb .thumb-image {
@@ -435,7 +439,7 @@ p.principle-number {
 #wilsonart .header img {
 	width: auto;
 	height: auto;
-	max-width: calc(100% - 48px);
+	max-width: 640px;
 	max-height: 520px;
 }
 
