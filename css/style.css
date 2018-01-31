@@ -159,18 +159,20 @@ div.thumb-grid {
 #postmates .thumb {
 	background: #000;
 	padding-bottom: 100%;
+	/*padding-bottom: 50%;*/
 }
 
 #growing-postmates .thumb {
-	background: #00AEAA;
+	background: #1D2C36;
+/*	background: #00AEAA;*/
 }
 
 #growing-postmates .thumb img {
-	-webkit-filter: blur(2px);
+	/*-webkit-filter: blur(2px);
 	-moz-filter:    blur(2px);
 	-o-filter:      blur(2px);
 	-ms-filter:     blur(2px);
-	filter:         blur(2px);
+	filter:         blur(2px);*/
 }
 
 #scribe .thumb {
@@ -186,6 +188,7 @@ div.thumb-grid {
 }
 
 #chase .thumb {
+/*	background: #007BCC;*/
 	background: #0C6BFE;
 }
 
@@ -199,37 +202,29 @@ a:hover .thumb {
 }
 
 #postmates .thumb .thumb-image {
-	height: auto;
+	/*height: auto;
 	width: 80%;
 	margin-left: calc(-0.5 * 80%);
-	margin-top:  calc(-0.5 * 80% * 0.88798);
-}
-
-#postmates .thumb .burger {
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin: auto;
-	height: 100%;
+	margin-top:  calc(-0.5 * 80% * 0.88798);*/
+	/*height: 80%;
 	width: auto;
-	margin-left: calc(-0.25 * 50%);
-}
-
-#postmates .thumb .noodles {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: auto;
-	height: 100%;
+	margin-left: calc(-0.25 * 80% * 1.12614);
+	margin-top:  calc(-0.25 * 80%);*/
+	height: 80%;
 	width: auto;
-	margin-right: calc(-0.25 * 50%);
+	margin-left: calc(-0.5 * 80% * 0.49609);
+	margin-top:  calc(-0.5 * 80%);
 }
 
 #growing-postmates .thumb .thumb-image {
-	height: 80%;
+	height: auto;
+	width: 40%;
+	margin-left: calc(-1/2 * 40%);
+	margin-top:  calc(-1/2 * 40% * 0.71786);
+	/*height: 80%;
 	width: auto;
-	margin-left: calc(-1/2 * 80% * 0.4851);
-	margin-top:  calc(-1/2 * 80%);
+	margin-left: calc(-0.5 * 80% * 0.47912);
+	margin-top:  calc(-0.5 * 80%);*/
 }
 
 #scribe .thumb .thumb-image {
@@ -254,6 +249,13 @@ a:hover .thumb {
 	height: auto;
 	margin-left: calc(-1/2 * 96%);
 	margin-top:  calc(-1/2 * 96% * 0.8063);
+}
+
+#chase .thumb .thumb-image {
+	height: 80%;
+	width: auto;
+	margin-left: calc(-0.5 * 80% * 0.47912);
+	margin-top:  calc(-0.5 * 80%);
 }
 
 /* About */
@@ -338,6 +340,22 @@ div.header {
 	margin: 0 auto;
 }
 
+#nextdoor div.content img {
+	width: auto;
+	height: auto;
+	max-height: 544px;
+	display: block;
+	margin: 0 auto;
+}
+
+#chase div.content img {
+	width: auto;
+	height: auto;
+	max-height: 544px;
+	display: block;
+	margin: 0 auto;
+}
+
 #postmates div.content img.type-system {
 	width: 100%;
 }
@@ -386,8 +404,17 @@ div.text .block-text .one-col-grid {
 	padding: 48px;
 }
 
-section.solution .two-col-grid, section.solution .three-col-grid {
+/*#postmates section.solution .two-col-grid, #postmates section.solution .three-col-grid {
 	background: #000;
+}*/
+
+#chase div.visual {
+	background: #f2f2f2;
+	padding: 48px;
+	width: calc(100%-128px);
+	height: 50%;
+	margin: 64px auto;
+	text-align: center;
 }
 
 p.caption, p.img-caption {
@@ -464,6 +491,17 @@ p.principle-number {
 
 #nextdoor .header {
 	background: #1E9E5E;
+}
+
+#chase .header {
+	background: #0C6BFE;
+}
+
+#chase .header img {
+	width: auto;
+	height: auto;
+	max-width: calc(100% - 40px);
+	max-height: 520px;
 }
 
 #nextdoor .toolkit-grid {
@@ -589,7 +627,7 @@ div.bottom-nav p {
 	}
 
 	#postmates {
-		/*grid-column: 1 / span 1;*/
+		grid-column: 1 / span 1;
 	}
 
 	#postmates .thumb {
@@ -619,6 +657,26 @@ div.bottom-nav p {
 
 	#postmates .header img {
 		max-height: 432px;
+	}
+
+	#scribe .header img {
+		max-width: calc(100% - 48px);
+	}
+
+	#wilsonart .header img {
+		max-width: calc(100% - 48px);
+	}
+
+	#chase .header img {
+		max-height: 432px;
+	}
+
+	#nextdoor div.content img {
+		width: 100%;
+	}
+
+	#chase div.content img {
+		width: 100%;
 	}
 
 	.case-study .container {
