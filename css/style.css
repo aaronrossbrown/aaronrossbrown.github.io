@@ -153,13 +153,13 @@ div.thumb-grid {
 }
 
 #postmates {
-	/*grid-column: 1 / span 2;*/
+	grid-column: 1 / span 2;
 }
 
 #postmates .thumb {
 	background: #000;
-	padding-bottom: 100%;
-	/*padding-bottom: 50%;*/
+	/*padding-bottom: 100%;*/
+	padding-bottom: 50%;
 }
 
 #growing-postmates .thumb {
@@ -206,14 +206,14 @@ a:hover .thumb {
 	width: 80%;
 	margin-left: calc(-0.5 * 80%);
 	margin-top:  calc(-0.5 * 80% * 0.88798);*/
-	/*height: 80%;
-	width: auto;
-	margin-left: calc(-0.25 * 80% * 1.12614);
-	margin-top:  calc(-0.25 * 80%);*/
 	height: 80%;
 	width: auto;
+	margin-left: calc(-0.25 * 80% * 1.12614);
+	margin-top:  calc(-0.25 * 80%);
+	/*height: 80%;
+	width: auto;
 	margin-left: calc(-0.5 * 80% * 0.49609);
-	margin-top:  calc(-0.5 * 80%);
+	margin-top:  calc(-0.5 * 80%);*/
 }
 
 #growing-postmates .thumb .thumb-image {
@@ -635,6 +635,10 @@ div.bottom-nav p {
 	}
 
 	#postmates .thumb .thumb-image {
+		/*height: auto;
+		width: 80%;
+		margin-left: calc(-0.5 * 80%);
+		margin-top:  calc(-0.5 * 80% * 0.88798);*/
 		height: auto;
 		width: 80%;
 		margin-left: calc(-0.5 * 80%);
