@@ -356,6 +356,14 @@ div.header {
 	margin: 0 auto;
 }
 
+#wilsonart div.content img {
+	width: auto;
+	height: auto;
+	max-height: 544px;
+	display: block;
+	margin: 0 auto;
+}
+
 #postmates div.content img.type-system {
 	width: 100%;
 }
@@ -470,13 +478,13 @@ p.principle-number {
 	max-height: 520px;
 }
 
-#wilsonart div.content img {
+/*#wilsonart div.content img {
 	width: 100%;
 	max-width: 640px;
 	height: auto;
 	display: block;
 	margin: 0 auto;
-}
+}*/
 
 #wilsonart div.content img.wallboard {
 	padding-right: 40px;
