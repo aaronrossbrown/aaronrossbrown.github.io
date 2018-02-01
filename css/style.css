@@ -412,9 +412,9 @@ div.text .block-text .one-col-grid {
 	padding: 48px;
 }
 
-/*#postmates section.solution .two-col-grid, #postmates section.solution .three-col-grid {
+#postmates section.solution .two-col-grid, #postmates section.solution .three-col-grid {
 	background: #000;
-}*/
+}
 
 #chase div.visual {
 	background: #f2f2f2;
