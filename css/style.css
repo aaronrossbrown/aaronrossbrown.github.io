@@ -467,6 +467,11 @@ p.principle-number {
 	max-height: 520px;
 }
 
+#scribe div.content img {
+	width: 100%;
+	margin: 64px 0;
+}
+
 #wilsonart .header {
 	background: #EE2E2A;
 }
