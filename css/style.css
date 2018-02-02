@@ -45,7 +45,7 @@ nav.anchor p a, nav.anchor p {
 .container {
 	width: calc(100% - 128px);
 	margin: 0 auto;
-	max-width: calc(1440px - 64px - 64px);
+	max-width: calc(1440px - 128px);
 	position: relative;
 }
 
@@ -334,8 +334,8 @@ div.header {
 #postmates div.content img {
 	width: auto;
 	height: auto;
-	max-width: 720px;
-	max-height: 464px;
+	max-width: 100%;
+	max-height: 544px;
 	display: block;
 	margin: 0 auto;
 }
@@ -352,6 +352,7 @@ div.header {
 	width: auto;
 	height: auto;
 	max-height: 544px;
+	max-width: 100%;
 	display: block;
 	margin: 0 auto;
 }
@@ -359,9 +360,17 @@ div.header {
 #wilsonart div.content img {
 	width: auto;
 	height: auto;
-	max-height: 544px;
+	max-width: 100%;
 	display: block;
 	margin: 0 auto;
+}
+
+#wilsonart div.content .four-col-grid img {
+	box-shadow:
+		0px 2px 8px  rgba(0, 0, 0, 0.24),
+		0px 2px 12px rgba(0, 0, 0, 0.08),
+		0px 2px 30px rgba(0, 0, 0, 0.12)
+	;
 }
 
 #postmates div.content img.type-system {
@@ -380,7 +389,7 @@ div.header {
 .one-col-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-gap: 32px;
+	grid-gap: 48px 48px;
 	margin: 64px auto;
 	background: #f2f2f2;
 	padding: 48px;
@@ -394,8 +403,8 @@ div.text .block-text .one-col-grid {
 
 .two-col-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 320px);
-	grid-gap: 32px;
+	grid-template-columns: repeat(2, max-content);
+	grid-gap: 48px 48px;
 	justify-content: center;
 	margin: 64px auto;
 	background: #f2f2f2;
@@ -404,8 +413,18 @@ div.text .block-text .one-col-grid {
 
 .three-col-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 320px);
-	grid-gap: 32px;
+	grid-template-columns: repeat(3, minmax(auto, max-content));
+	grid-gap: 48px 48px;
+	justify-content: center;
+	margin: 64px auto;
+	background: #f2f2f2;
+	padding: 48px;
+}
+
+.four-col-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(auto, max-content));
+	grid-gap: 48px 48px;
 	justify-content: center;
 	margin: 64px auto;
 	background: #f2f2f2;
@@ -431,29 +450,6 @@ p.caption, p.img-caption {
 	font-size: 16px;
 	margin: 12px auto 32px;
 	max-width: 320px;
-}
-
-.principles-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 48px 48px;
-	margin: 64px auto;
-}
-
-p.principle-number {
-	font-size: 48px;
-	line-height: 1.333;
-	display: none;
-}
-
-.principle h2 {
-	font-size: 24px;
-	line-height: 1.333;
-	margin-bottom: 16px;
-}
-
-.principle p {
-	line-height: 1.75;
 }
 
 #scribe .header {
@@ -482,14 +478,6 @@ p.principle-number {
 	max-width: 640px;
 	max-height: 520px;
 }
-
-/*#wilsonart div.content img {
-	width: 100%;
-	max-width: 640px;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-}*/
 
 #wilsonart div.content img.wallboard {
 	padding-right: 40px;
@@ -692,7 +680,7 @@ div.bottom-nav p {
 		width: 100%;
 	}
 
-	#chase div.content img {
+	#chase div.content .visual img {
 		width: 100%;
 	}
 
@@ -704,20 +692,21 @@ div.bottom-nav p {
 		padding: 48px 0;
 	}
 
-	.two-col-grid {
+	.two-col-grid, .three-col-grid, .four-col-grid {
 		grid-template-columns: 1fr;
 	}
 
-	.three-col-grid {
-		grid-template-columns: 1fr;
+	.one-col-grid, .two-col-grid, .three-col-grid, .four-col-grid {
+		margin: 48px 0;
+	}
+
+	#nextdoor .one-col-grid {
+		padding: 24px;
+		margin: 48px 0;
 	}
 
 	div.header {
 		height: 100vh;
-	}
-
-	.principles-grid {
-		grid-template-columns: 100%;
 	}
 
 	div.text h1 {
