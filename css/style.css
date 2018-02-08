@@ -176,8 +176,8 @@ div.thumb-grid {
 
 #chase {
 	grid-column: 4 / span 5;
-}
-*/
+}*/
+
 #postmates .thumb {
 	background: #000;
 	padding-bottom: 100%;
@@ -229,7 +229,7 @@ a:hover .thumb {
 	width: 80%;
 	margin-left: calc(-0.5 * 80%);
 	margin-top:  calc(-0.5 * 80% * 0.88798);
-	/*height: 80%;
+/*	height: 80%;
 	width: auto;
 	margin-left: calc(-0.25 * 80% * 1.12614);
 	margin-top:  calc(-0.25 * 80%);*/
