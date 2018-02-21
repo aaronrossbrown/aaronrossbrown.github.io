@@ -189,14 +189,6 @@ div.thumb-grid {
 /*	background: #00AEAA;*/
 }
 
-#growth .thumb img {
-	/*-webkit-filter: blur(2px);
-	-moz-filter:    blur(2px);
-	-o-filter:      blur(2px);
-	-ms-filter:     blur(2px);
-	filter:         blur(2px);*/
-}
-
 #scribe .thumb {
 	background: #2F80ED;
 }
@@ -467,7 +459,7 @@ div.text .block-text .one-col-grid {
 
 .two-col-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, auto);
 	grid-gap: 48px 48px;
 	justify-content: center;
 	margin: 64px auto;
