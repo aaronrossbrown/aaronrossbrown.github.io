@@ -221,7 +221,7 @@ div.thumb-grid {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.8) !important;
+	background: rgba(0, 0, 0, 0.6) !important;
 	z-index: 10;
 	opacity: 0;
 	display: flex;
