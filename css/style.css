@@ -122,8 +122,8 @@ nav div.container {
 
 div.thumb-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-/*	grid-template-columns: repeat(12, 1fr);*/
+/*	grid-template-columns: repeat(2, 1fr);*/
+	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto auto;
 	grid-gap: 32px 32px;
 }
@@ -154,34 +154,43 @@ div.thumb-grid {
 	top: 50%;
 }
 
-/*#postmates {
-	grid-column: 1 / span 10;
+#yelp {
+	grid-column: 1 / span 6;
 }
 
-#growth {
+#postmates {
 	grid-column: 7 / span 6;
 }
 
+#growth {
+	grid-column: 1 / span 6;
+}
+
 #scribe {
-	grid-column: 3 / span 6;
+	grid-column: 7 / span 6;
 }
 
 #wilsonart {
-	grid-column: 1 / span 4;
+	grid-column: 1 / span 6;
 }
 
 #nextdoor {
-	grid-column: 6 / span 6;
+	grid-column: 7 / span 6;
 }
 
 #chase {
 	grid-column: 4 / span 5;
-}*/
+}
+
+#yelp .thumb {
+	background: #DD3543;
+/*	padding-bottom: 50%;*/
+}
 
 #postmates .thumb {
 	background: #000;
 	padding-bottom: 100%;
-/*	padding-bottom: 50%;*/
+/*	padding-bottom: 80%;*/
 }
 
 #growth .thumb {
@@ -206,6 +215,24 @@ div.thumb-grid {
 	background: #0C6BFE;
 }
 
+.coming-soon {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8) !important;
+	z-index: 10;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.coming-soon p {
+	color: #fff;
+}
+
 a:hover .thumb {
 	/*transform: translateY(-4px);*/
 	transform: translateY(-1px) scale(1.004);
@@ -214,6 +241,31 @@ a:hover .thumb {
 		0px 2px 12px rgba(0, 0, 0, 0.08),
 		0px 2px 30px rgba(0, 0, 0, 0.12)
 	;
+}
+
+a:hover .thumb.coming-soon {
+	opacity: 1;
+}
+
+#yelp .thumb .thumb-image {
+/*	height: 120%;
+	left: calc(24px);
+	top: calc(24px);*/
+/*	height: auto;
+	width: 80%;
+	margin-left: calc(-0.5 * 80%);
+	margin-top:  calc(-0.5 * 80% * 0.70607);*/
+	height: 25%;
+	width: auto;
+	margin-left: calc(-0.5 * 25% * 0.73167);
+	margin-top:  calc(-0.5 * 25%);
+/*	width: 100%;
+	margin-left: calc(-0.5 * 100%);
+	margin-top:  calc(-0.5 * 100% * 0.29545);*/
+/*	width: 150%;
+	margin-left: calc(-0.25 * 150%);
+	margin-top:  calc(-0.25 * 150% * 0.80070);*/
+/*	transform: rotate(-30deg);*/
 }
 
 #postmates .thumb .thumb-image {
@@ -233,9 +285,9 @@ a:hover .thumb {
 
 #growth .thumb .thumb-image {
 	height: auto;
-	width: 40%;
-	margin-left: calc(-1/2 * 40%);
-	margin-top:  calc(-1/2 * 40% * 0.71786);
+	width: 25%;
+	margin-left: calc(-1/2 * 25%);
+	margin-top:  calc(-1/2 * 25% * 0.71786);
 	/*height: 80%;
 	width: auto;
 	margin-left: calc(-0.5 * 80% * 0.47912);
@@ -683,9 +735,22 @@ div.bottom-nav p {
 		grid-gap: 24px;
 	}
 
-	/*div.thumb-grid div {
+	div.thumb-grid div {
 		grid-column: auto !important;
-	}*/
+	}
+
+	#yelp {
+		grid-column: 1 / span 1;
+	}
+
+	.coming-soon {
+		opacity: 1;
+		background: rgba(0, 0, 0, 0.6);
+	}
+
+	#postmates .thumb {
+		padding-bottom: 100%;
+	}
 
 	#postmates {
 		grid-column: 1 / span 1;
